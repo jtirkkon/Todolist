@@ -2,9 +2,35 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table, th, td {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+tr {
+  border-bottom: 1px solid black;
+}
+
+th, td {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.header-style {
+  background-color: black;
+  color: white;
+  min-height: 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+.input-style {
+  border: 1px solid grey;
+  padding: 15px;
+  justify-content: center;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
