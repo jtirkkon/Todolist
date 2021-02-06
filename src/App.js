@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div>
-      <h1 class="header-style">Simple Todolist</h1>
-      <div class="input-style">
+      <h1 class="headerStyle">Simple Todolist</h1>
+      <div class="inputStyle">
         <h4>Add todo:</h4>
         <form onSubmit={addTodo}>
           <label>Description: </label>
@@ -34,7 +34,7 @@ function App() {
             <th>Description</th>
           </tr>
           {todos.map((todo, index) => 
-            <tr class="description-style" key={index}>
+            <tr key={index}>
               <td>{todo.date}</td> 
               <td>{todo.description}</td>
               </tr>

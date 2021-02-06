@@ -18,7 +18,7 @@ th, td {
   padding-bottom: 5px;
 }
 
-.header-style {
+.headerStyle {
   background-color: black;
   color: white;
   min-height: 50px;
@@ -26,7 +26,7 @@ th, td {
   padding: 30px;
 }
 
-.input-style {
+.inputStyle {
   border: 1px solid grey;
   padding: 15px;
   justify-content: center;
