@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div>
-      <h1 class="headerStyle">Simple Todolist</h1>
-      <div class="inputStyle">
+      <h1 className="headerStyle">Simple Todolist</h1>
+      <div className="inputStyle">
         <h4>Add todo:</h4>
         <form onSubmit={addTodo}>
           <label>Description: </label>
