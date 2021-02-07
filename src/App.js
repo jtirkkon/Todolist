@@ -4,9 +4,7 @@ import './App.css';
 function App() {
   const [desc, setDesc] = useState({description: '', date: ''});
   const [todos, setTodos] = useState([]);
-  //github testaus
-  //testaus
-
+  
   const inputChanged = (event) => {
     setDesc({...desc, [event.target.name]: event.target.value});
   }
@@ -14,6 +12,11 @@ function App() {
   const addTodo = (event) => {
     event.preventDefault();
     setTodos([...todos, desc]);
+  }
+
+  const deleteTodo = (index) => {
+    console.log(index)
+    setTodos(todos.filter((todo, i) => i !== index));
   }
 
   return (
@@ -39,6 +42,7 @@ function App() {
             <tr key={index}>
               <td>{todo.date}</td> 
               <td>{todo.description}</td>
+              <td><button onClick={() => deleteTodo(index)}>Delete</button></td>
               </tr>
             )}
         </tbody>
