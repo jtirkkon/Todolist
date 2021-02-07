@@ -15,7 +15,6 @@ function App() {
   }
 
   const deleteTodo = (index) => {
-    console.log(index)
     setTodos(todos.filter((todo, i) => i !== index));
   }
 
