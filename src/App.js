@@ -13,6 +13,7 @@ function App() {
   const addTodo = (event) => {
     event.preventDefault();
     setTodos([...todos, desc]);
+    setDesc({description: '', date: ''});
   }
 
   const deleteTodo = (index) => {
