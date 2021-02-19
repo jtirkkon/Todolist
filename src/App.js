@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-import Todotable from './components/Todolist';
+import Todotable from './components/Todotable';
 
 function App() {
   const [desc, setDesc] = useState({description: '', date: ''});
